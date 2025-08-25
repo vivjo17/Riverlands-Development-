@@ -57,6 +57,14 @@ body {
   color: var(--accent-color);
 }
 
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
 .welcome {
   height: 80vh;
   display: flex;
@@ -189,16 +197,63 @@ body {
 }
 
 @media (max-width: 768px) {
-  .hero-content h1 {
+  .header {
+    flex-wrap: wrap;
+    padding-right: 20px;
+  }
+  .logo img {
+    height: 100px;
+    width: 120px;
+    transform: none;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .nav {
+    width: 100%;
+    display: none;
+    flex-basis: 100%;
+  }
+  .nav.active {
+    display: block;
+  }
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .welcome-content h1 {
     font-size: 2.2rem;
   }
-  .hero-content p {
+  .welcome-content p {
     font-size: 1rem;
   }
   .feature {
     width: 100%;
   }
-  .nav ul {
-    gap: 15px;
+
+  @media (max-width: 480px) {
+    .header {
+      padding: 5px 10px;
+    }
+    .logo img {
+      height: 80px;
+      width: 100px;
+    }
+    .welcome-content h1 {
+      font-size: 1.8rem;
+    }
+    .welcome-content p {
+      font-size: 0.9rem;
+    }
+    .btn-primary,
+    .btn-secondary {
+      padding: 10px 20px;
+    }
+    .features,
+    .builder-opportunities {
+      padding: 40px 20px;
+    }
   }
 }
