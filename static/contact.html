@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="/assets/style.css" />
   </head>
 
   <body>
@@ -16,7 +16,7 @@
       <div class="logo">
         <a href="index.html">
           <img
-            src="../assets/images/transparent.png"
+            src="/assets/images/transparent.png"
             alt="Riverlands Logo"
             id="logo"
           />
@@ -25,7 +25,7 @@
       <nav class="nav">
         <ul>
           <li><a href="vision.html">Vision</a></li>
-          <li><a href="index.html">Location</a></li>
+          <li><a href="location.html">Location</a></li>
           <li><a href="builders.html">Builders</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -33,14 +33,30 @@
     </header>
 
     <section class="contact-section">
-      <form id="contact-form" class="contact-form">
+      <form
+        id="contact-form"
+        class="contact-form"
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        action="/thanks.html"
+      >
         <h1>Contact Us</h1>
+        <input type="hidden" name="form-name" value="contact" />
+        <p style="display: none">
+          <label
+            >Don’t fill this out if you’re human: <input name="bot-field"
+          /></label>
+        </p>
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required />
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required />
         <label for="message">Message</label>
         <textarea id="message" name="message" rows="5" required></textarea>
+
+        <div data-netlify-recaptcha="true"></div>
         <button type="submit" class="btn-primary">Send</button>
         <p id="status"></p>
       </form>
