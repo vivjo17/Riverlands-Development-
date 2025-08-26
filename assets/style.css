@@ -225,9 +225,10 @@ body {
     padding-right: 20px;
   }
   .logo img {
-    height: 130px;
-    width: 160px;
-    transform: none;
+    height: 100px;
+    width: 140px;
+    transform: scale(1.3);
+    transform-origin: left center;
   }
   .menu-toggle {
     display: block;
@@ -265,8 +266,10 @@ body {
       padding: 5px 10px;
     }
     .logo img {
-      height: 110px;
-      width: 140px;
+      height: 90px;
+      width: 120px;
+      transform: scale(1.2);
+      transform-origin: left center;
     }
     .welcome-content h1 {
       font-size: 1.8rem;
