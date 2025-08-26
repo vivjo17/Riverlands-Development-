@@ -260,33 +260,33 @@ body {
   .contact-section {
     padding-top: 180px;
   }
+}
 
-  @media (max-width: 480px) {
-    .header {
-      padding: 5px 10px;
-    }
-    .logo img {
-      height: 90px;
-      width: 120px;
-      transform: scale(1.2);
-      transform-origin: left center;
-    }
-    .welcome-content h1 {
-      font-size: 1.8rem;
-    }
-    .welcome-content p {
-      font-size: 0.9rem;
-    }
-    .btn-primary,
-    .btn-secondary {
-      padding: 10px 20px;
-    }
-    .features,
-    .builder-opportunities {
-      padding: 40px 20px;
-    }
-    .contact-section {
-      padding-top: 150px;
-    }
+@media (max-width: 480px) {
+  .header {
+    padding: 5px 10px;
+  }
+  .logo img {
+    height: 90px;
+    width: 120px;
+    transform: scale(1.2);
+    transform-origin: left center;
+  }
+  .welcome-content h1 {
+    font-size: 1.8rem;
+  }
+  .welcome-content p {
+    font-size: 0.9rem;
+  }
+  .btn-primary,
+  .btn-secondary {
+    padding: 10px 20px;
+  }
+  .features,
+  .builder-opportunities {
+    padding: 40px 20px;
+  }
+  .contact-section {
+    padding-top: 150px;
   }
 }
