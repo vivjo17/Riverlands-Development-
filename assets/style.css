@@ -138,6 +138,18 @@ body {
   margin-top: 0;
 }
 
+.builder-opportunities p,
+.builder-opportunities ul {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  text-align: left;
+  line-height: 1.7;
+}
+
+.builder-opportunities ul {
+  padding-left: 20px;
+}
+
 .btn-secondary {
   background-color: transparent;
   color: var(--primary-color);
@@ -165,7 +177,7 @@ body {
 }
 
 .contact-section {
-  padding: 120px 20px 40px;
+  padding: 240px 20px 40px;
   background-color: #f7f9f9;
 }
 
@@ -232,6 +244,10 @@ body {
   }
   .feature {
     width: 100%;
+  }
+
+  .contact-section {
+    padding-top: 180px;
   }
 
   @media (max-width: 480px) {
