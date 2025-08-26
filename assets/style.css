@@ -176,9 +176,19 @@ body {
   font-size: 0.9rem;
 }
 
+.contact-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .contact-section {
   padding: 240px 20px 40px;
   background-color: #f7f9f9;
+}
+
+.contact-page .footer {
+  margin-top: auto;
 }
 
 .contact-form {
@@ -271,6 +281,9 @@ body {
     .features,
     .builder-opportunities {
       padding: 40px 20px;
+    }
+    .contact-section {
+      padding-top: 150px;
     }
   }
 }
